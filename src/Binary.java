@@ -16,4 +16,23 @@ public class Binary {
         }
         return -1;
     }
+    public static int decToBin(int dec)
+    {
+        StringBuilder dc = new StringBuilder();
+
+        while (dec > 0) {
+            if (dec % 2 == 0)
+                dc.append(0);
+            else dc.append(1);
+            dec /=2;
+        }
+        dc.reverse();  String temp =dc.toString();
+        int finale = Integer.parseInt(temp);
+        if(finale !=0)
+        {
+            System.out.println(dc);
+            return finale;
+        }
+        return -1;
+    }
 }
