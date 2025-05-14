@@ -1,3 +1,4 @@
+import java.io.*;
 public class Binary {
     public static int binaryToDec(int bin) {
         String binst = String.valueOf(bin);
